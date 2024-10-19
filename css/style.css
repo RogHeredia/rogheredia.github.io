@@ -1,0 +1,19 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: Verdana;
+
+  }
+  
+  p,
+  li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-family: Arial;
+  }
+
+  html {
+    background-color: #00539f;
+  }
+  
