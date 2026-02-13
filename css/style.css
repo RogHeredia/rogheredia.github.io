@@ -17,3 +17,18 @@ h1 {
     background-color: #00539f;
   }
   
+  /* Estado base de la barra */
+.progress-bar {
+  height: 20px;
+  background-color: #4caf50; /* Tu color actual */
+  transition: all 0.4s ease-in-out; /* La clave de la suavidad */
+  border-radius: 10px;
+}
+
+/* Reacción al Hover */
+.progress-container:hover .progress-bar {
+  background-color: #81c784; /* Cambia a un color más claro */
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.7); /* Brillo tipo neón */
+  transform: scaleY(1.2); /* Se hace un poco más gruesa */
+  cursor: pointer;
+}
