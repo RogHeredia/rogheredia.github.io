@@ -16,19 +16,26 @@ h1 {
   html {
     background-color: #00539f;
   }
-  
-  /* Estado base de la barra */
-.progress-bar {
-  height: 20px;
-  background-color: #4caf50; /* Tu color actual */
-  transition: all 0.4s ease-in-out; /* La clave de la suavidad */
-  border-radius: 10px;
+
+/* Asegúrate de que el contenedor tenga un tamaño */
+.progress-container {
+    background-color: #333; /* Gris oscuro */
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden; /* Importante para que la barra no se salga */
 }
 
-/* Reacción al Hover */
+.progress-bar {
+    height: 100%;
+    background-color: #007bff; /* Tu color principal */
+    transition: all 0.3s ease; /* Para que se vea la animación */
+}
+
+/* EL TRUCO: Cuando el mouse toca el contenedor, cambia la barra */
 .progress-container:hover .progress-bar {
-  background-color: #81c784; /* Cambia a un color más claro */
-  box-shadow: 0 0 15px rgba(76, 175, 80, 0.7); /* Brillo tipo neón */
-  transform: scaleY(1.2); /* Se hace un poco más gruesa */
-  cursor: pointer;
+    background-color: #aa00ff !important; 
+    filter: brightness(1.2);
+    cursor: pointer;
 }
